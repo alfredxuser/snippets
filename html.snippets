@@ -1,0 +1,1353 @@
+snippet html "html5 template init" b
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="author" content="${2:REPLACE}">
+    <meta name="description" content="${3:REPLACE}">
+    <meta name="keywords" content="${4:REPLACE}">
+    <meta name="robots" content="index, follow">
+    <title>${5:REPLACE}</title>
+    <link rel="stylesheet" type="text/css" href="${6:REPLACE}">
+    <link rel="shortcut icon" type="image/x-icon" href="${8:REPLACE}">
+    <link rel="canonical" href="${9:REPLACE}">
+    <!--Browser reset-->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!--FONTS-->
+    ${10:LINK-FONTS}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Mulish:wght@500;800&display=swap" rel="stylesheet">
+    <!--ICONS-->
+    <!-- unicons by iconscout -->
+    <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/solid.css">
+    <!-- remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- line-awesome -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+
+    <header>
+	~~~
+    </header>
+
+    <main>
+	~~~
+    </main>
+
+    <footer>
+	~~~
+    </footer>
+
+</body>
+</html>
+endsnippet
+
+snippet a "hyperlink used to link one page to another" b
+<a href="${1:URL}" ${2}>${3:REPLACE}</a>
+endsnippet
+
+snippet a. "hyperlink used to link one page to another" b
+<a href="${1:URL}" class="${2}" ${3}>${4:REPLACE}</a>
+endsnippet
+
+snippet a# "hyperlink used to link one page to another" b
+<a href="${1:URL}" id="${2}" ${3}>${4:REPLACE}</a>
+endsnippet
+
+snippet abbr "defines an abbreviation or an acronym" b
+<abbr title="${1}" ${2}>${3:REPLACE}</abbr>
+endsnippet
+
+snippet abbr. "defines an abbreviation or an acronym" b
+<abbr title="${1}" class="${2}" ${3}>${4:REPLACE}</abbr>
+endsnippet
+
+snippet abbr# "defines an abbreviation or an acronym" b
+<abbr title="${1}" id="${2}" ${3}>${4:REPLACE}</abbr>
+endsnippet
+
+snippet article "used in forum posts, blog posts, news story" b
+<article ${1}>
+    ${2:INSERT}
+</article>
+endsnippet
+
+snippet article. "used in forum posts, blog posts, news story" b
+<article class="${1}" ${2}>
+    ${3:INSERT}
+</article>
+endsnippet
+
+snippet article# "used in forum posts, blog posts, news story" b
+<article id="${1}" ${2}>
+    ${3:INSERT}
+</article>
+endsnippet
+
+snippet aside "conent placed as aside bar of the document" b
+<aside ${1}>
+    ${2:INSERT}
+</aside>
+endsnippet
+
+snippet aside. "conent placed as aside bar of the document" b
+<aside class="${1}" ${2}>
+    ${3:INSERT}
+</aside>
+endsnippet
+
+snippet aside# "conent placed as aside bar of the document" b
+<aside id="${1}" ${2}>
+    ${3:INSERT}
+</aside>
+endsnippet
+
+snippet audio "embed soun content in document" b
+<audio controls ${1}>
+    <source src="${2:URL}" type="${3:mp3/wav/ogg}" ${4}>
+</audio>
+endsnippet
+
+snippet audio. "embed soun content in document" b
+<audio controls class="${1}" ${2}>
+    <source src="${3:URL}" type="${4:mp3/wav/ogg}" ${5}>
+</audio>
+endsnippet
+
+snippet audio# "embed soun content in document" b
+<audio controls id="${1}" ${2}>
+    <source src="${3:URL}" type="${4:mp3/wav/ogg}" ${5}>
+</audio>
+endsnippet
+
+snippet b "bold text whithout semantyc" b
+<b ${1}>${2:REPLACE}</b>
+endsnippet
+
+snippet b. "bold text whithout semantyc" b
+<b class="${1}" ${2}>${3:REPLACE}</b>
+endsnippet
+
+snippet b# "bold text whithout semantyc" b
+<b id="${1}" ${2}>${3:REPLACE}</b>
+endsnippet
+
+snippet blockquote "specifies a section that is quoted from another source" b
+<blockquote cite="${1:BIBLIOGRAPHY}" ${2}>${3:REPLACE}</blockquote>
+endsnippet
+
+snippet blockquote. "specifies a section that is quoted from another source" b
+<blockquote cite="${1:BIBLIOGRAPHY}" class="${2}" ${3}>${4:REPLACE}</blockquote>
+endsnippet
+
+snippet blockquote# "specifies a section that is quoted from another source" b
+<blockquote cite="${1:BIBLIOGRAPHY}" id="${2}" ${3}>${4:REPLACE}</blockquote>
+endsnippet
+
+snippet body "defines the document body" b
+<body>
+    ${1:REPLACE}
+</body>
+endsnippet
+
+snippet button "specify the type of the button" b
+<button type"${1:SUBMIT/RESET/BUTTON}" name="${2}" ${3}>${4:REPLACE}</button>
+endsnippet
+
+snippet button. "specify the type of the button" b
+<button type"${1:SUBMIT/RESET/BUTTON}" name="${2}" class="${3}" ${4}>${5:REPLACE}</button>
+endsnippet
+
+snippet button# "specify the type of the button" b
+<button type"${1:SUBMIT/RESET/BUTTON}" name="${2}" id="${3}" ${4}>${5:REPLACE}</button>
+endsnippet
+
+snippet cite "defines title of creative work" b
+<cite ${1}>${2:REPLACE}</cite>
+endsnippet
+
+snippet cite. "defines title of creative work" b
+<cite class="${1}" ${2}>${3:REPLACE}</cite>
+endsnippet
+
+snippet cite# "defines title of creative work" b
+<cite id="${1}" ${2}>${3:REPLACE}</cite>
+endsnippet
+
+snippet code "defines computer code" b
+<code ${1}>${2:REPLACE}</code>
+endsnippet
+
+snippet code. "defines computer code" b
+<code class="${1}" ${2}>${3:REPLACE}</code>
+endsnippet
+
+snippet code# "defines computer code" b
+<code id="${1}" ${2}>${3:REPLACE}</code>
+endsnippet
+
+snippet datalist "specify a list of pre-defined options for input element" b
+<datalist ${1}>
+    <option value="${2:REPLACE}" ${3}>
+</datalist>
+endsnippet
+
+snippet datalist. "specify a list of pre-defined options for input element" b
+<datalist class="${1}" ${2}>
+    <option value="${3:REPLACE}" ${4}>
+</datalist>
+endsnippet
+
+snippet datalist# "specify a list of pre-defined options for input element" b
+<datalist id="${1}" ${2}>
+    <option value="${3:REPLACE}" ${4}>
+</datalist>
+endsnippet
+
+snippet details "specifies additional details" b
+<details cursor="pointer"${1}>
+    <summary ${2}>${3:REPLACE}</summary>
+</details>
+endsnippet
+
+snippet details. "specifies additional details" b
+<details cursor="pointer" class="${1}" ${2}>
+    <summary ${3}>${4:REPLACE}</summary>
+</details>
+endsnippet
+
+snippet details# "specifies additional details" b
+<details cursor="pointer" id="${1}" ${2}>
+    <summary ${3}>${4:REPLACE}</summary>
+</details>
+endsnippet
+
+snippet div "creates div" b
+<div ${1}>
+    ${2:REPLACE}
+</div>
+endsnippet
+
+snippet div. "creates div" b
+<div class="${1}" ${2}>
+    ${3:REPLACE}
+</div>
+endsnippet
+
+snippet div# "creates div" b
+<div id="${1}" ${2}>
+    ${3:REPLACE}
+</div>
+endsnippet
+
+snippet em "used to defines emphasized text" b
+<em ${1}>${2:REPLACE}</em>
+endsnippet
+
+snippet em. "used to defines emphasized text" b
+<em class="${1}" ${2}>${3:REPLACE}</em>
+endsnippet
+
+snippet em# "used to defines emphasized text" b
+<em id="${1}" ${2}>${3:REPLACE}</em>
+endsnippet
+
+snippet fieldset "tag used to group related elements in a form" b
+<fieldset ${1}>
+    ${2:INSERT}
+</fieldset>
+endsnippet
+
+snippet fieldset. "tag used to group related elements in a form" b
+<fieldset class="${1}" ${2}>
+    ${3:INSERT}
+</fieldset>
+endsnippet
+
+snippet fieldset# "tag used to group related elements in a form" b
+<fieldset id="${1}" ${2}>
+    ${3:INSERT}
+</fieldset>
+endsnippet
+
+snippet footer "defines the footer of a document" b
+<footer ${1}>
+    ${2:INSERT}
+</footer>
+endsnippet
+
+snippet footer. "defines the footer of a document" b
+<footer class="${1}" ${2}>
+    ${3:INSERT}
+</footer>
+endsnippet
+
+snippet footer# "defines the footer of a document" b
+<footer id="${1}" ${2}>
+    ${3:INSERT}
+</footer>
+endsnippet
+
+snippet form "insert a form" b
+<form action="${1:/replace.php}" method="${2:GET/POST}" autocomplete="on" name="${3}" ${4}>
+    ${5:INSERT}
+</form>
+endsnippet
+
+snippet form. "insert a form" b
+<form action="${1:/replace.php}" method="${2:GET/POST}" autocomplete="on" name="${3}" class="${4}" ${5}>
+    ${6:INSERT}
+</form>
+endsnippet
+
+snippet form# "insert a form" b
+<form action="${1:/replace.php}" method="${2:GET/POST}" autocomplete="on" name="${3}" id="${4}" ${5}>
+    ${6:INSERT}
+</form>
+endsnippet
+
+snippet h1 "main title" b
+<h1 ${1}>${2:REPLACE}</h1>
+endsnippet
+
+snippet h1. "main title" b
+<h1 class="${1}" ${2}>${3:REPLACE}</h1>
+endsnippet
+
+snippet h1# "main title" b
+<h1 id="${1}" ${2}>${3:REPLACE}</h1>
+endsnippet
+
+snippet h2 "subtitle" b
+<h2 ${1}>${2:REPLACE}</h2>
+endsnippet
+
+snippet h2. "subtitle" b
+<h2 class="${1}" ${2}>${3:REPLACE}</h2>
+endsnippet
+
+snippet h2# "subtitle" b
+<h2 id="${1}" ${2}>${3:REPLACE}</h2>
+endsnippet
+
+snippet h3 "third title"
+<h3 ${1}>${2:REPLACE}</h3>
+endsnippet
+
+snippet h3. "subtitle" b
+<h3 class="${1}" ${2}>${3:REPLACE}</h2>
+endsnippet
+
+snippet h3# "subtitle" b
+<h3 id="${1}" ${2}>${3:REPLACE}</h2>
+endsnippet
+
+snippet h4 "title" b
+<h4 ${1}>${2:REPLACE}</h4>
+endsnippet
+
+snippet h4. "subtitle" b
+<h4 class="${1}" ${2}>${3:REPLACE}</h2>
+endsnippet
+
+snippet h4# "subtitle" b
+<h4 id="${1}" ${2}>${3:REPLACE}</h2>
+endsnippet
+
+snippet h5 "title" b
+<h5 ${1}>${2:REPLACE}</h5>
+endsnippet
+
+snippet h5. "subtitle" b
+<h5 class="${1}" ${2}>${3:REPLACE}</h2>
+endsnippet
+
+snippet h5# "subtitle" b
+<h5 id="${1}" ${2}>${3:REPLACE}</h2>
+endsnippet
+
+snippet h6 "title" b
+<h6 ${1}>${2:REPLACE}</h6>
+endsnippet
+
+snippet h6. "subtitle" b
+<h6 class="${1}" ${2}>${3:REPLACE}</h2>
+endsnippet
+
+snippet h6# "subtitle" b
+<h6 id="${1}" ${2}>${3:REPLACE}</h2>
+endsnippet
+
+snippet header "represents a container of introductory content" b
+<header ${1}>
+    ${2:INSERT}
+</header>
+endsnippet
+
+snippet header. "represents a container of introductory content" b
+<header class="${1}" ${2}>
+    ${3:INSERT}
+</header>
+endsnippet
+
+snippet header# "represents a container of introductory content" b
+<header id="${1}" ${2}>
+    ${3:INSERT}
+</header>
+endsnippet
+
+snippet i "for icons" b
+<i class="${1:INSERT}"></i>
+endsnippet
+
+snippet iframe "used to embed another HTML document" b
+<iframe src="${1:URL}" ${2}></iframe>
+endsnippet
+
+snippet iframe. "used to embed another HTML document" b
+<iframe src="${1:URL}" class="${2}" ${3}></iframe>
+endsnippet
+
+snippet iframe# "used to embed another HTML document" b
+<iframe src="${1:URL}" id="${2}" ${3}></iframe>
+endsnippet
+
+snippet img "used to embed a image" b
+<img src="${1:URL}" alt="${2}" ${3}>
+endsnippet
+
+snippet img. "used to embed a image" b
+<img src="${1:URL}" alt="${2}" class="${3}" ${4}>
+endsnippet
+
+snippet img# "used to embed a image" b
+<img src="${1:URL}" alt="${2}" id="${3}" ${4}>
+endsnippet
+
+snippet input "specifies an input field" b
+<input type="${1}" placeholder="${2:REPLACE}" autocomplete="on" ${3}>
+endsnippet
+
+snippet input. "specifies an input field" b
+<input type="${1}" placeholder="${2:REPLACE}" autocomplete="on" class="${3}" ${4}>
+endsnippet
+
+snippet input# "specifies an input field" b
+<input type="${1}" placeholder="${2:REPLACE}" autocomplete="on" id="${3}" ${4}>
+endsnippet
+
+snippet label "defines a label for elements" b
+<label for="${1:Id}" ${2}>${3:REPLACE}</label>
+endsnippet
+
+snippet label. "defines a label for elements" b
+<label for="${1:Id}" class="${2}" ${3}>${4:REPLACE}</label>
+endsnippet
+
+snippet label# "defines a label for elements" b
+<label for="${1:Id}" id="${2}" ${3}>${4:REPLACE}</label>
+endsnippet
+
+snippet legend "defines a caption for fieldset tag" b
+<legend ${1}>${2:REPLACE}</legend>
+endsnippet
+
+snippet legend. "defines a caption for fieldset tag" b
+<legend class="${1}" ${2}>${3:REPLACE}</legend>
+endsnippet
+
+snippet legend# "defines a caption for fieldset tag" b
+<legend id="${1}" ${2}>${3:REPLACE}</legend>
+endsnippet
+
+snippet li "list item, used in ordered, unordered and menu lists" b
+<li ${1}>${2:REPLACE}</li>
+endsnippet
+
+snippet li. "list item, used in ordered, unordered and menu lists" b
+<li class="${1}" ${2}>${3:REPLACE}</li>
+endsnippet
+
+snippet li# "list item, used in ordered, unordered and menu lists" b
+<li id="${1}" ${2}>${3:REPLACE}</li>
+endsnippet
+
+snippet link "defines the relationship between current document and an external source" b
+<link rel="${1}" type="${2}" href="${3}" ${4}>
+endsnippet
+
+snippet link. "defines the relationship between current document and an external source" b
+<link rel="${1}" type="${2}" href="${3}" class="${4}" ${5}>
+endsnippet
+
+snippet link# "defines the relationship between current document and an external source" b
+<link rel="${1}" type="${2}" href="${3}" id="${4}" ${5}>
+endsnippet
+
+snippet main "specifies the main content of a document" b
+<main>
+    ${1:INSERT}
+</main>
+endsnippet
+
+snippet nav "defines the navigation in a document" b
+<nav ${1}>
+    ${2:INSERT}
+</nav>
+endsnippet
+
+snippet nav. "defines the navigation in a document" b
+<nav class="${1}" ${2}>
+    ${3:INSERT}
+</nav>
+endsnippet
+
+snippet nav# "defines the navigation in a document" b
+<nav id="${1}" ${2}>
+    ${3:INSERT}
+</nav>
+endsnippet
+
+snippet ol "defines an ordered list" b
+<ol ${1}>
+    ${2:INSERT}
+</ol>
+endsnippet
+
+snippet ol. "defines an ordered list" b
+<ol class="${1}" ${2}>
+    ${3:INSERT}
+</ol>
+endsnippet
+
+snippet ol# "defines an ordered list" b
+<ol id="${1}" ${2}>
+    ${3:INSERT}
+</ol>
+endsnippet
+
+snippet optgroup "used to group related options in a select element" b
+<optgroup label="${1:REPLACE}" ${2}>
+    ${3:INSERT}
+</optgroup>
+endsnippet
+
+snippet optgroup. "used to group related options in a select element" b
+<optgroup label="${1:REPLACE}" class="${2}" ${3}>
+    ${4:INSERT}
+</optgroup>
+endsnippet
+
+snippet optgroup# "used to group related options in a select element" b
+<optgroup label="${1:REPLACE}" id="${2}" ${3}>
+    ${4:INSERT}
+</optgroup>
+endsnippet
+
+snippet option "defines an option in a select list" b
+<option value="${1:REPLACE}" ${2}>${3:$1}</option>
+endsnippet
+
+snippet option. "defines an option in a select list" b
+<option value="${1:REPLACE}" class="${2}" ${3}>${4:$1}</option>
+endsnippet
+
+snippet option# "defines an option in a select list" b
+<option value="${1:REPLACE}" id="${2}" ${3}>${4:$1}</option>
+endsnippet
+
+snippet p "defines a paragraph" b
+<p ${1}>${2:REPLACE}</p>
+endsnippet
+
+snippet p. "defines a paragraph" b
+<p class="${1}" ${2}>${3:REPLACE}</p>
+endsnippet
+
+snippet p# "defines a paragraph" b
+<p id="${1}" ${2}>${3:REPLACE}</p>
+endsnippet
+
+snippet progress "represent the completion of a task" b
+<progress value="${1:REPLACE}" max="100" ${2}>${3:$1}%</progress>
+endsnippet
+
+snippet progress. "represent the completion of a task" b
+<progress value="${1:REPLACE}" max="100" class="${2}" ${3}>${4:$1}%</progress>
+endsnippet
+
+snippet progress# "represent the completion of a task" b
+<progress value="${1:REPLACE}" max="100" id="${2}" ${3}>${4:$1}%</progress>
+endsnippet
+
+snippet script "used to embed javascript" b
+<script ${1}>${2:INSERT}</script>
+endsnippet
+
+snippet section "defines a section in a document"
+<section ${1}>
+    ${2:INSERT}
+</section>
+endsnippet
+
+snippet section. "defines a section in a document"
+<section class="${1}" ${2}>
+    ${3:INSERT}
+</section>
+endsnippet
+
+snippet section# "defines a section in a document"
+<section id="${1}" ${2}>
+    ${3:INSERT}
+</section>
+endsnippet
+
+snippet select "used to create drop-down list" b
+<select name="${1}" ${2}>
+    ${3:INSERT}
+</select>
+endsnippet
+
+snippet select. "used to create drop-down list" b
+<select name="${1}" class="${2}" ${3}>
+    ${4:INSERT}
+</select>
+endsnippet
+
+snippet select# "used to create drop-down list" b
+<select name="${1}" id="${2}" ${3}>
+    ${4:INSERT}
+</select>
+endsnippet
+
+snippet small "defines smaller text like copyright,etc." b
+<small ${1}>${2:REPLACE}</small>
+endsnippet
+
+snippet small. "defines smaller text like copyright,etc." b
+<small class="${1}" ${2}>${3:REPLACE}</small>
+endsnippet
+
+snippet small# "defines smaller text like copyright,etc." b
+<small id="${1}" ${2}>${3:REPLACE}</small>
+endsnippet
+
+snippet source "used to specify multiple media resources" b
+<source src="${1:URL}" type="${2:FILE-EXTENSION}" ${3}>
+endsnippet
+
+snippet source. "used to specify multiple media resources" b
+<source src="${1:URL}" type="${2:FILE-EXTENSION}" class="${3}" ${4}>
+endsnippet
+
+snippet source# "used to specify multiple media resources" b
+<source src="${1:URL}" type="${2:FILE-EXTENSION}" id="${3}" ${4}>
+endsnippet
+
+snippet span "used to mark up a part of text" b
+<span ${1}>${2}</span>
+endsnippet
+
+snippet span. "used to mark up a part of text" b
+<span class="${1}" ${2}>${3}</span>
+endsnippet
+
+snippet span# "used to mark up a part of text" b
+<span id="${1}" ${2}>${3}</span>
+endsnippet
+
+snippet strong "used to define text with semantyc" b
+<strong ${1}>${2:REPLACE}</strong>
+endsnippet
+
+snippet strong. "used to define text with semantyc" b
+<strong class="${1}" ${2}>${3:REPLACE}</strong>
+endsnippet
+
+snippet strong# "used to define text with semantyc" b
+<strong id="${1}" ${2}>${3:REPLACE}</strong>
+endsnippet
+
+snippet summary "defines a visible heading for details elements" b
+<summary ${1}>${2:REPLACE}</summary>
+endsnippet
+
+snippet summary. "defines a visible heading for details elements" b
+<summary class="${1}" ${2}>${3:REPLACE}</summary>
+endsnippet
+
+snippet summary# "defines a visible heading for details elements" b
+<summary id="${1}" ${2}>${3:REPLACE}</summary>
+endsnippet
+
+snippet t "insert a tagname" b
+<${1:Tagname}>${2}</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet table "defines a HTML table" b
+<table ${1}>
+    <tr ${2}>
+	${3:INSERT}
+    </tr>
+</table>
+endsnippet
+
+snippet table. "defines a HTML table" b
+<table class="${1}" ${2}>
+    <tr ${3}>
+	${4:INSERT}
+    </tr>
+</table>
+endsnippet
+
+snippet table# "defines a HTML table" b
+<table id="${1}" ${2}>
+    <tr ${3}>
+	${4:INSERT}
+    </tr>
+</table>
+endsnippet
+
+snippet textarea "defines a multi-line text input control" b
+<textarea name="${1}" placeholder="${2:REPLACE}" ${3}></textarea>
+endsnippet
+
+snippet textarea. "defines a multi-line text input control" b
+<textarea name="${1}" placeholder="${2:REPLACE}" class="${3}" ${4}></textarea>
+endsnippet
+
+snippet textarea# "defines a multi-line text input control" b
+<textarea name="${1}" placeholder="${2:REPLACE}" id="${3}" ${4}></textarea>
+endsnippet
+
+snippet time "defines a specific time" b
+<time ${1}>${2:REPLACE}</time>
+endsnippet
+
+snippet time. "defines a specific time" b
+<time class="${1}" ${2}>${3:REPLACE}</time>
+endsnippet
+
+snippet time# "defines a specific time" b
+<time id="${1}" ${2}>${3:REPLACE}</time>
+endsnippet
+
+snippet ul "defines a unordered list" b
+<ul ${1}>
+    ${2:INSERT}
+</ul>
+endsnippet
+
+snippet ul. "defines a unordered list" b
+<ul class="${1}" ${2}>
+    ${3:INSERT}
+</ul>
+endsnippet
+
+snippet ul# "defines a unordered list" b
+<ul id="${1}" ${2}>
+    ${3:INSERT}
+</ul>
+endsnippet
+
+snippet video "used to embed video" b
+<video controls ${1}>
+    <source src="${2:URL}" type="${3}" ${4}>
+</video>
+endsnippet
+
+snippet video. "used to embed video" b
+<video controls class="${1}" ${2}>
+    <source src="${3:URL}" type="${4}" ${5}>
+</video>
+endsnippet
+
+snippet video# "used to embed video" b
+<video controls id="${1}" ${2}>
+    <source src="${3:URL}" type="${4}" ${5}>
+</video>
+endsnippet
+
+snippet wbr "word break opportunity, add a line-break" b
+<wbr ${1}>${2:REPLACE}</wbr>
+endsnippet
+
+snippet wbr. "word break opportunity, add a line-break" b
+<wbr class="${1}" ${2}>${3:REPLACE}</wbr>
+endsnippet
+
+snippet wbr# "word break opportunity, add a line-break" b
+<wbr id="${1}" ${2}>${3:REPLACE}</wbr>
+endsnippet
+
+
+#------------!Attributes!------------#
+snippet acc "accept" w
+accept="${1}"
+endsnippet
+
+snippet ach "accept-charset" w
+accept-charset="${1}"
+endsnippet
+
+snippet ack "acceskey" w
+acceskey="${1}"
+endsnippet
+
+snippet act "action" w
+action="${1}"
+endsnippet
+
+snippet alt "alternative" w
+alt="${1}"
+endsnippet
+
+snippet asy "async" w
+async
+endsnippet
+
+snippet auc "autocomplete" w
+autocomplete="on"
+endsnippet
+
+snippet auf "autofocus" w
+autofocus
+endsnippet
+
+snippet aup "autoplay" w
+autoplay
+endsnippet
+
+snippet cha "charset" w
+charset="${1}"
+endsnippet
+
+snippet che "checked" w
+checked
+endsnippet
+
+snippet cit "cite" w
+cite="${1:REPLACE}"
+endsnippet
+
+snippet co "content" w
+content="${1:REPLACE}"
+endsnippet
+
+snippet coe "contenteditable" w
+contenteditable="true"
+endsnippet
+
+snippet con "controls" w
+controls
+endsnippet
+
+snippet coo "coords" w
+coords="${1:x,x,x}"
+endsnippet
+
+snippet dat "data" w
+data="${1:REPLACE}"
+endsnippet
+
+snippet dti "datetime" w
+datetime="${1:REPLACE}"
+endsnippet
+
+snippet def "default" w
+default
+endsnippet
+
+snippet df "defer" w
+defer
+endsnippet
+
+snippet dir "direction" w
+dir="${1:REPLACE}"
+endsnippet
+
+snippet din "dirname" w
+dirname="${1:REPLACE}"
+endsnippet
+
+snippet dis "disabled" w
+disabled
+endsnippet
+
+snippet dow "download" w
+download
+endsnippet
+
+snippet dra "draggable" w
+draggable="true"
+endsnippet
+
+snippet enc "enctype" w
+enctype="${1:REPLACE}"
+endsnippet
+
+snippet for "for" w
+for="${1}"
+endsnippet
+
+snippet frm "form" w
+form="${1:REPLACE}"
+endsnippet
+
+snippet fra "formaction" w
+fomraction="${1:REPLACE}"
+endsnippet
+
+snippet hea "headers" w
+headers="${1:REPLACE}"
+endsnippet
+
+snippet hid "hidden" w
+hidden
+endsnippet
+
+snippet hig "high" w
+high="${1}"
+endsnippet
+
+snippet hre "href" w
+href="${1}"
+endsnippet
+
+snippet hrl "hreflang" w
+hreflang="${1}"
+endsnippet
+
+snippet htt "http-equiv" w
+http-equiv="${1}"
+endsnippet
+
+snippet ki "kind" w
+kind="${1}"
+endsnippet
+
+snippet la "label" w
+label="${1}"
+endsnippet
+
+snippet ls "list" w
+list="${1}"
+endsnippet
+
+snippet low "low" w
+low="${1}"
+endsnippet
+
+snippet max "max" w
+max="${1}"
+endsnippet
+
+snippet mxl "maxlength" w
+maxlength="${1}"
+endsnippet
+
+snippet med "media" w
+media="${1}"
+endsnippet
+
+snippet met "method" w
+maxlength="${1:get/post}"
+endsnippet
+
+snippet min "min" w
+min="${1}"
+endsnippet
+
+snippet min "min" w
+min="${1}"
+endsnippet
+
+snippet na "name" w
+name="${1}"
+endsnippet
+
+snippet on "onabort" w
+onabort="${1}"
+endsnippet
+
+snippet ona "onafterprint" w
+onafterprint="${1}"
+endsnippet
+
+snippet onb "onbeforeprint" w
+onbeforeprint="${1}"
+endsnippet
+
+snippet onbl "onblur" w
+onblur="${1}"
+endsnippet
+
+snippet onc "oncanplay" w
+oncanplay="${1}"
+endsnippet
+
+snippet onct "oncanplaythrough" w
+oncanplaythrough="${1}"
+endsnippet
+
+snippet onch "onchange" w
+onchange="${1}"
+endsnippet
+
+snippet onck "onclick" w
+onclick="${1}"
+endsnippet
+
+snippet oncm "oncontextmenu" w
+oncontextmenu="${1}"
+endsnippet
+
+snippet oncp "oncopy" w
+oncopy="${1}"
+endsnippet
+
+snippet onct "oncut" w
+oncut="${1}"
+endsnippet
+
+snippet ondb "ondblclick" w
+ondblclick="${1}"
+endsnippet
+
+snippet ond "ondrag" w
+ondrag="${1}"
+endsnippet
+
+snippet onde "ondragend" w
+ondragend="${1}"
+endsnippet
+
+snippet one "ondragenter" w
+ondragenter="${1}"
+endsnippet
+
+snippet ondv "ondragleave" w
+ondragleave="${1}"
+endsnippet
+
+snippet ondo "ondragover" w
+ondragover="${1}"
+endsnippet
+
+snippet onds "ondragstart" w
+ondragstart="${1}"
+endsnippet
+
+snippet ondp "ondrop" w
+ondrop="${1}"
+endsnippet
+
+snippet onch "ondurationchange" w
+ondurationchange="${1}"
+endsnippet
+
+snippet ondd "onended" w
+onended="${1}"
+endsnippet
+
+snippet onrr "onerror" w
+onerror="${1}"
+endsnippet
+
+snippet onfc "onfocus" w
+onfocus="${1}"
+endsnippet
+
+snippet onhc "onhashchange" w
+onhashchange="${1}"
+endsnippet
+
+snippet onip "oninput" w
+oninput="${1}"
+endsnippet
+
+snippet oniv "oninvalid" w
+oninvalid="${1}"
+endsnippet
+
+snippet onkd "onkeydown" w
+onkeydown="${1}"
+endsnippet
+
+snippet onkp "onkeypress" w
+onkeypress="${1}"
+endsnippet
+
+snippet onku "onkeyup" w
+onkeyup="${1}"
+endsnippet
+
+snippet onld "onload" w
+onload="${1}"
+endsnippet
+
+snippet ondt "onloadeddata" w
+onloadeddata="${1}"
+endsnippet
+
+snippet onmt "onloadedmetadata" w
+onloadedmetadata="${1}"
+endsnippet
+
+snippet onls "onloadstart" w
+onloadstart="${1}"
+endsnippet
+
+snippet onmd "onmousedown" w
+onmousedown="${1}"
+endsnippet
+
+snippet onmm "onmousemove" w
+onmousemove="${1}"
+endsnippet
+
+snippet onmo "onmouseout" w
+onmouseout="${1}"
+endsnippet
+
+snippet onmv "onmouseover" w
+onmouseover="${1}"
+endsnippet
+
+snippet onmu "onmouseup" w
+onmouseup="${1}"
+endsnippet
+
+snippet onof "onoffline" w
+onoffline="${1}"
+endsnippet
+
+snippet onon "ononline" w
+ononline="${1}"
+endsnippet
+
+snippet onps "onpageshow" w
+onpageshow="${1}"
+endsnippet
+
+snippet onp "onpaste" w
+onpaste="${1}"
+endsnippet
+
+snippet onpa "onpause" w
+onpause="${1}"
+endsnippet
+
+snippet onpl "onplay" w
+onplay="${1}"
+endsnippet
+
+snippet onpg "onplaying" w
+onplaying="${1}"
+endsnippet
+
+snippet onpss "onprogress" w
+onprogress="${1}"
+endsnippet
+
+snippet onrc "onratechange" w
+onratechange="${1}"
+endsnippet
+
+snippet onrs "onreset" w
+onreset="${1}"
+endsnippet
+
+snippet onrz "onresize" w
+onresize="${1}"
+endsnippet
+
+snippet onsr "onscroll" w
+onscroll="${1}"
+endsnippet
+
+snippet onse "onsearch" w
+onsearch="${1}"
+endsnippet
+
+snippet onsk "onseeked" w
+onseeked="${1}"
+endsnippet
+
+snippet onkg "onseeking" w
+onseeking="${1}"
+endsnippet
+
+snippet onlt "onselect" w
+onselect="${1}"
+endsnippet
+
+snippet onll "onstalled" w
+onstalled="${1}"
+endsnippet
+
+snippet onsm "onsubmit" w
+onsubmit="${1}"
+endsnippet
+
+snippet onsd "onsuspend" w
+onsuspend="${1}"
+endsnippet
+
+snippet ontu "ontimeupdate" w
+ontimeupdate="${1}"
+endsnippet
+
+snippet ontg "ontoggle" w
+ontoggle="${1}"
+endsnippet
+
+snippet onud "onunload" w
+onunload="${1}"
+endsnippet
+
+snippet onvc "onvolumechange" w
+onvolumechange="${1}"
+endsnippet
+
+snippet onw "onwaiting" w
+onwaiting="${1}"
+endsnippet
+
+snippet onwl "onwheel" w
+onwheel="${1}"
+endsnippet
+
+snippet ono "onopen" w
+onopen="${1}"
+endsnippet
+
+snippet opm "optimum" w
+optimum="${1}"
+endsnippet
+
+snippet ptn "pattern" w
+pattern="${1}"
+endsnippet
+
+snippet plh "placeholder" w
+placeholder="${1}"
+endsnippet
+
+snippet pst "poster" w
+poster="${1}"
+endsnippet
+
+snippet prl "preload" w
+preload="${1}"
+endsnippet
+
+snippet rw "rows" w
+rows="${1}"
+endsnippet
+
+snippet rws "rowspan" w
+rowspan="${1}"
+endsnippet
+
+snippet scp "scope" w
+scope="${1}"
+endsnippet
+
+snippet sp "shape" w
+shape="${1}"
+endsnippet
+
+snippet sz "size" w
+size="${1}"
+endsnippet
+
+snippet szs "sizes" w
+sizes="${1}"
+endsnippet
+
+snippet sp "span" w
+span="${1}"
+endsnippet
+
+snippet sc "spellcheck" w
+spellcheck="${1}"
+endsnippet
+
+snippet src "source" w
+src="${1:URL}"
+endsnippet
+
+snippet sd "srcdoc" w
+srcdoc="${1}"
+endsnippet
+
+snippet sl "srclang" w
+srclang="${1}"
+endsnippet
+
+snippet str "start" w
+start="${1}"
+endsnippet
+
+snippet stp "step" w
+step="${1}"
+endsnippet
+
+snippet stl "style" w
+style="${1}"
+endsnippet
+
+snippet ti "tabindex" w
+tabindex="${1}"
+endsnippet
+
+snippet trg "target" w
+target="_blank"
+endsnippet
+
+snippet tit "title" w
+title="${1}"
+endsnippet
+
+snippet tsl "translate" w
+translate="${1}"
+endsnippet
+
+snippet ty "type" w
+type="${1}"
+endsnippet
+
+snippet ty "type" w
+type="${1}"
+endsnippet
+
+snippet um "usemap" w
+usemap="${1}"
+endsnippet
+
+snippet vl "value" w
+value="${1}"
+endsnippet
+
+snippet wd "width" w
+width="${1}"
+endsnippet
+
+snippet wr "wrap" w
+wrap="${1}"
+endsnippet
+
+snippet ! "html comment"
+<!-- ${1} -->
+endsnippet
